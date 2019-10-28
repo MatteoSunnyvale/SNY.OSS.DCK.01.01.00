@@ -1,6 +1,6 @@
 
 #sudo add-apt-repository -y ppa:jonathonf/python-3.6
-#sudo apt-get update
+sudo apt-get update
 
 
 # Python3
