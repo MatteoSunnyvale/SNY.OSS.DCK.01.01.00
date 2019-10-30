@@ -1,4 +1,4 @@
-xi# Docker Swarm cluster
+# Docker Swarm cluster
 
 ## Prerequisites
 
@@ -103,7 +103,8 @@ verify: Service converged
 ```
 
 ```console
-vagrant@swarmmanager:~$ ID                  NAME                MODE                REPLICAS            IMAGE               PORTS
+vagrant@swarmmanager:~$ docker service ls
+ID                  NAME                MODE                REPLICAS            IMAGE               PORTS
 ti0272mum77o        web                 replicated          5/5                 nginx:latest        *:4000->80/tcp
 ```
 
@@ -139,9 +140,9 @@ Commercial support is available at
 </html>
 ```
 
-Scaling replicas.
 ```console
-docker service scale web=15
+vagrant@swarmmanager:~$ docker service scale web=50
+verify: Service converged 
 ```
 
 
