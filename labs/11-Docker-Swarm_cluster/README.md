@@ -1,4 +1,4 @@
-# Docker Swarm cluster
+xi# Docker Swarm cluster
 
 ## Prerequisites
 
@@ -71,8 +71,7 @@ Connect to the **swarmmanager** VM
 $ cd <GIT_REPO_NAME>/vagrant
 $ vagrant up
 $ vagrant ssh swarmmanager
-vagrant@swarmmanager:~$ nbg
-u
+vagrant@swarmmanager:~$ 
 ```
 
 Verify the cluster status
@@ -139,6 +138,12 @@ Commercial support is available at
 </body>
 </html>
 ```
+
+Scaling replicas.
+```console
+docker service scale web=15
+```
+
 
 Finally, stop/delete the service to preserve computational resources.
 
